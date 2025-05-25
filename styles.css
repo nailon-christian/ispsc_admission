@@ -1,0 +1,117 @@
+/* Reset and base */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center;     /* vertically center */
+  flex-direction: column;  /* stack login box and footer vertically */
+}
+
+/* Common box styles for login and signup */
+.login-box, .signup-box {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  width: 360px;
+  box-sizing: border-box;
+  color: #111;
+  text-align: center;
+  margin-bottom: 20px; /* space between box and footer text */
+}
+
+/* Titles */
+.login-box h2, .signup-box h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+/* Input fields and selects */
+.login-box input[type="text"],
+.login-box input[type="password"],
+.signup-box input[type="text"],
+.signup-box input[type="password"],
+.signup-box select {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  background-color: #fefefe;
+  font-size: 1rem;
+  color: #111;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.login-box input[type="text"]:focus,
+.login-box input[type="password"]:focus,
+.signup-box input[type="text"]:focus,
+.signup-box input[type="password"]:focus,
+.signup-box select:focus {
+  outline: none;
+  border-color: #444;
+}
+
+/* Buttons */
+.login-box button,
+.signup-box button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover,
+.signup-box button:hover {
+  background-color: #555;
+}
+
+/* Footer text below boxes */
+.login-footer, .signup-footer {
+  color: #444;
+  font-size: 0.95rem;
+  width: 360px;
+  text-align: center;
+  user-select: none;
+}
+
+.login-footer a, .signup-footer a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-footer a:hover, .signup-footer a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.signup-box input[type="text"],
+.signup-box input[type="email"],
+.signup-box input[type="password"],
+.signup-box select {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  background-color: #fefefe;
+  font-size: 1rem;
+  color: #111;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
